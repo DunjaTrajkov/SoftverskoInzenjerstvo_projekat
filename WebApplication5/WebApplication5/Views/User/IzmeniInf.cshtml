@@ -1,0 +1,53 @@
+﻿@model WebApplication5.Models.Korisnik
+
+@{
+    ViewData["Title"] = "Izmeni informacije o profila";
+}
+
+<div class="izmeni-main-bg">
+    <h1 class="mnogo-jak-naslov">Izmeni informacije o profilu</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="IzmeniInf">
+                    @*<div asp-validation-summary="ModelOnly" class="text-danger"></div>*@
+                    <input type="hidden" asp-for="Idkorisnika" />
+                    <div class="form-group">
+                        <label asp-for="Ime" class="control-label jak-naslov"></label>
+                        <input asp-for="Ime" class="form-control" />
+                        <span asp-validation-for="Ime" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Prezime" class="control-label jak-naslov"></label>
+                        <input asp-for="Prezime" class="form-control" />
+                        <span asp-validation-for="Prezime" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label jak-naslov"></label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label asp-for="BrojTelefona" class="control-label jak-naslov"></label>
+                        <input asp-for="BrojTelefona" class="form-control" />
+                        <span asp-validation-for="BrojTelefona" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Sacuvaj izmene" asp-area="" asp-controller="User" asp-action="SacuvajIzmene" class="btn promeni-link" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div>
+            <a class="btn promeni-link" asp-action="MojProfil">Povratak na profil</a>
+        </div>
+    </div>
+</div>
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }

@@ -1,0 +1,82 @@
+﻿@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<WebApplication5.Models.KorisnikNarudzbine>
+@{
+    ViewData["Title"] = "Prikazi narudzbine";
+}
+
+<h1>Prikazi narudzbine</h1>
+
+
+<div class="korpa-main-bg">
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Datum narucivanja</th>
+                <th>DatumIsporuke</th>
+                <th>AdresaIsporuke</th>
+                <th>ID Kataloga</th>
+                <th>Naziv kataloga/menija</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                @foreach (KorisnikNarudzbine nar in Model)
+                {
+                    <tr>
+
+                        <td>@nar.Narudzbina.DatumNarucivanja</td>
+                        <td>@nar.Narudzbina.DatumIsporuke</td>
+                        <td>@nar.Narudzbina.AdresaIsporuke</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    @foreach (Katalog k in nar.Items)
+                    {
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>@k.Idkatalog</td>
+                            <td> @k.Naziv </td>
+                        </tr>
+                    }
+                    <tr>
+                        <td colspan="2">  <a class="btn btn-success" asp-area="" asp-controller="Menadzer" asp-action="PotvrdiNarudzbinu" asp-route-id="@nar.Narudzbina.Idnarudzbine">Potvrdi narudzbinu</a> </td>
+                        <td colspan="3"> <a class="btn btn-danger" asp-area="" asp-controller="Menadzer" asp-action="OdbaciNarudzbinu" asp-route-id="@nar.Narudzbina.Idnarudzbine">Odbaci narudzbinu</a>  </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="5">
+                        <p class="alert-danger mojText1">
+                            Korpa je prazna. Nemate dodati meni/katalog u korpu.
+                        </p>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+</div>
+<div class="footer">
+    <div class="pagination">
+
+        @Html.PagedListPager(Model, page => Url.Action("KreirajMeniPoIzboru", "Shop", new { page = page }), new X.PagedList.Mvc.Common.PagedListRenderOptions
+            {
+          DisplayItemSliceAndTotal = false,
+          ContainerDivClasses = new[] {"navigation" },
+          LiElementClasses = new[] { "page-item"},
+          PageClasses = new[] { "page-link"}
+            }
+        )
+
+
+    </div>
+</div>

@@ -1,0 +1,35 @@
+﻿.mojText1 {
+    color: #B37B2D;
+    font-size: 20px;
+}
+#ttext {
+    font-size: 16px;
+
+    /*color: #b0b435; maslinasto zelena*/
+    color:white;
+}
+
+.divTeksta {
+    background-color: #ffffff;
+    /*text-align: center !important;*/
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.nasaPozadina {
+    background-color: #fff;
+}
+
+.ceoTekst {
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: Garamond,serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+h2 {
+    font-weight:600;
+    font-size: 24px;
+}
+

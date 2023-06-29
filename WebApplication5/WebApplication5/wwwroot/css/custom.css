@@ -1,0 +1,243 @@
+
+/** ADD YOUR AWESOME CODES HERE **/
+
+.promeni-btn {
+    background-color: #e1bc74;
+    border: none;
+    margin-right: 50px;
+}
+
+    .promeni-btn:hover {
+        background-color: #bb923a;
+    }
+
+textarea {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.promeni-link {
+    background-color: #bb923a;
+    border: solid 0.5px #bb923a;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    padding: 2px 2px 2px 2px;
+}
+
+    .promeni-link:hover {
+        background-color: #e1bc74;
+        color: white;
+        border-color: #bb923a;
+    }
+
+h1 {
+    text-align-last: center;
+    color: #2D1208;
+    font-size: 30px;
+}
+
+.mnogo-jak-naslov {
+    font-size:40px;
+    font-weight:900;
+}
+
+.jak-naslov {
+    font-size:30px;
+    font-weight:700;
+}
+
+.izmeni-link {
+    color: #bb923a;
+}
+
+    .izmeni-link:hover {
+        color: limegreen;
+    }
+
+.obrisi-link {
+    color: #bb923a;
+}
+
+    .obrisi-link:hover {
+        color: red;
+    }
+
+.proizvodi-body {
+    background-image: url("../images/pozadinske/baked-baking-beautiful-bridal-306070.jpg");
+    background-repeat:no-repeat;
+    background-size: 100%;
+    background-attachment:fixed;
+    padding-top:20px;
+}
+
+td, th {
+    color:rgba(0,0,0,1);
+    opacity:0.8;
+    background-color:white;
+    text-align:center;
+}
+
+td {
+    font-weight:500;
+    width:auto;
+}
+
+.control-label {
+    color: #402012;
+    font-size: 25px;
+}
+
+figure img {
+    width: 465px;
+    height: 250px;
+}
+
+.card-deck {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+
+.meni-bg {
+    background-image: url(../images/pozadinske/italian-menu-bcg.png);
+}
+
+.meni-main-bg {
+    background-image: url(../images/BgImgForm/meni-main-bg.png);
+    margin: 0px;
+    width: 100%;
+    background-repeat: repeat-y;
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.katalog-bg {
+    background-image: url(../images/pozadinske/katalog-bg.png);
+}
+
+.flex-sm-row {
+    padding-bottom:20px;
+}
+
+.profil-container {
+    width:325px;
+    padding-left: 50px;
+}
+
+.nar-container {
+    width: 500px;
+    border: 2px solid #bb923a;
+}
+
+.profil-main-container {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-around;
+    padding: 0px 15px;
+    margin-top: 15px;
+}
+
+dt, dl {
+    color:black;
+}
+
+.div-align {
+    margin-top:5px;
+    border: 1px dotted #bb923a;
+    border-radius:5px;
+    width: 180px;
+    height:26.5px;
+    align-self: center;
+    line-height:2;
+    background-color: #bb923a;
+}
+
+.div-align:hover, .div-align > a:hover {
+    background-color:white;
+    transition:1s;
+}
+
+.table-nar, .table-ter {
+    width: 100%;
+}
+
+.tr-nar:last-child, .tr-ter:last-child {
+    border-bottom: none;
+}
+
+.thead-nar, .thead-ter {
+    border-bottom: 1px solid black;
+}
+
+.tr-nar, .tr-ter {
+    border-bottom: 1px solid black;
+}
+
+.termini-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    padding-top:30px;
+}
+
+.termini-main-bg {
+    background-image: url(../images/BgImgForm/termini-background.jpg);
+    min-height: 600px;
+    margin-top: 26px;
+    padding-top: 20px;
+}
+
+.input-termini {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.narudzbine-termini {
+}
+
+.termini-btn-dodaj {
+    width: 100%;
+    background-color: rgba(255,255,255,0.7);
+    color: #bb923a;
+    border: 1px solid #bb923a;
+    border-radius: 5px;
+    text-align: center;
+}
+
+    .termini-btn-dodaj:hover {
+        background-color: white;
+        transition: 0.5s;
+    }
+
+
+.izmeni-main-bg {
+    background-image: url(../images/pozadinske/izmeni-bg.jpg);
+    margin-top:26px;
+    padding-top:20px;
+}
+
+.korpa-main-bg {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-image: url(../images/BgImgForm/meni-main-bg.png);
+    min-height:1000px;
+}
+
+.korpa-lista {
+    display:flex;
+    flex-direction:column;
+    align-content:space-between;
+    min-width:600px;
+    min-height:800px;
+    background-color: rgba(255,255,255,0.5);
+    margin-top:50px;
+}

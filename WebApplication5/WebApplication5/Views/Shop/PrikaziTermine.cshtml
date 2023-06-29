@@ -1,0 +1,108 @@
+﻿@using Microsoft.AspNetCore.Http
+@using Newtonsoft.Json;
+@model IEnumerable<WebApplication5.Models.Narudzbina>
+
+@{
+    ViewData["Title"] = "Prikazi termine";
+    var json = Context.Session.GetString("User");
+    Korisnik user = null;
+    if (json != null)
+    {
+        user = JsonConvert.DeserializeObject<Korisnik>(json);
+    }
+}
+<div class="termini-main-bg">
+    <h1 class="mnogo-jak-naslov">Prikaz zauzetih termina</h1>
+    <div class="termini-container">
+        <div class="input-termini col-4">
+            
+            @*<input type="date"  />
+            <input type="time" />
+            <a class="termini-btn-dodaj" asp-controller="Shop" asp-action="DodajTermin">Dodaj termin</a>*@
+            @if(user != null)
+            { 
+                @if(user.Tip.Contains("korisnik"))
+                { 
+                  @Html.Partial("DodajTermin",  new Narudzbina());
+                }
+            }
+
+
+        </div>
+        <div class="narudzbine-termini col-8">
+            <table class="table-ter">
+                <thead class="thead-ter">
+                    <tr class="tr-ter">
+                        <th>
+                            @Html.DisplayNameFor(model => model.DatumNarucivanja)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.DatumIsporuke)
+                        </th>
+
+                        @*ovde sam obrisao adresu, dobro bi bilo da postavimo ko je isporucio*@
+
+                        <th>@Html.DisplayNameFor(model => model.VremeIsporuke)</th>
+
+                        @if (user != null)
+                        {
+                            @if (user.Tip.Contains("menadzer"))
+                            {
+                                <th>
+                                    @Html.DisplayNameFor(model => model.AdresaIsporuke)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.UkupnaCena)
+                                </th>
+                                @*<th>
+                                    Email
+                                  </th>
+                                  <th>
+                                    Ime radnika
+                                  </th>*@
+                                <th>Akcije</th>
+                            }
+                        }
+                    </tr>
+                </thead>
+                <tbody class="tbody-ter">
+                    @foreach (var item in Model)
+                    {
+                        <tr class="tr-ter">
+                            <td>
+                                @Html.DisplayFor(modelItem => item.DatumNarucivanja)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.DatumIsporuke)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.VremeIsporuke)
+                            </td>
+                            @*<td>
+                    @Html.DisplayFor(modelItem => item.IdkorisnikaNavigation.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdradnikaNavigation.Ime)
+                </td>*@
+                            @if (user != null)
+                            {
+                                if (user.Tip.Contains("menadzer"))
+                                {
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.AdresaIsporuke)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.UkupnaCena)
+                                    </td>
+                                    <td>
+                                        <a asp-area="" asp-controller="Shop" asp-action="UkloniTermin" asp-route-id="@item.Idnarudzbine">Ukloni</a>
+                                    </td>
+                                }
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

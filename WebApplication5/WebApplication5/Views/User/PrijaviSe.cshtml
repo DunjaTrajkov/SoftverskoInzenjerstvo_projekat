@@ -1,0 +1,89 @@
+﻿@model WebApplication5.Models.Korisnik
+
+@{
+    ViewData["Title"] = "PrijaviSe";
+    Layout = null;
+}
+
+@{ 
+
+    string obavestenje = ViewBag.Obavesetenjel ?? null;
+
+}
+
+<!------ Include the above in your HEAD tag ---------->
+<!--author:starttemplate-->
+<!--reference site : starttemplate.com-->
+<!DOCTYPE html>
+<html >
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <title>Prijavi se</title>
+    <link rel="shortcut icon" href="~/images/grape-icon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="~/images/grape-icon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="~/css/PriForma.css" />
+</head>
+<body>
+    <!-- Page Content -->
+
+    <div class="prijava-form">
+        <form asp-action="PrijaviSe" method="post">
+          
+            <h2 id="h2moj">Prijavi se</h2>
+            @if (obavestenje != null)
+            {
+            <p id="h2moj">obavestenje </p>
+            }
+
+
+            <hr>
+            <div class="form-group">
+                <img id="slik2" class="img-fluid" src="~/images/BgImgForm/user3.png" alt="Photo" />
+            </div>
+
+            <div class="form-group">
+                <label id="mojaLabela" asp-for="Username" class="control-label"></label>
+                <input id="intext" asp-for="Username" class="form-control" placeholder="Korisnicko ime" required="required" />
+                <span id="crvenaZaValid" asp-validation-for="Username" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label id="mojaLabela" asp-for="Sifra" class="control-label"></label>
+                <input id="intext" asp-for="Sifra" class="form-control" name="Sifra" placeholder="Sifra" require="required" />
+                <span id="crvenaZaValid" asp-validation-for="Sifra" class="text-danger"></span>
+            </div>
+
+
+
+
+            <div class="form-group ">
+                <button type="submit" class="btn spinner-grow" asp-area="" asp-controller="User" asp-action="PrijaviSe">Prijavi se</button>
+            </div>
+            <div class="form-group">
+                <a class="btn btn-danger" name="Na pocetnu stranu" asp-area="" asp-controller="Home" asp-action="Index" role="button">Na pocetnu stranu</a>
+            </div>
+
+        </form>
+        @*<div class="hint-text">Zaboravili ste sifru? <a id="text" asp-action="ZaboravljenaSifra">Povratite je!</a></div>*@
+        <div class="hint-text">Nemate nalog? <a id="text" asp-action="Registrovanje">Registrujte se besplatno!</a></div>
+
+    </div>
+
+
+
+
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
+
+</body>
+</html>
+

@@ -1,0 +1,155 @@
+﻿@using Microsoft.AspNetCore.Http
+@using Newtonsoft.Json;
+
+
+@model WebApplication5.Models.MojProfil
+
+@{
+    ViewData["Title"] = "Moj profil";
+    string username = (Context.Session.GetString("Username") != null) ? Context.Session.GetString("Username") : "";
+    int broj = ViewBag.Profil;
+}
+
+<h1>MojProfil</h1>
+@{
+    var json = Context.Session.GetString("User") != null ? Context.Session.GetString("User") : null;
+    Korisnik user = null;
+
+    if (json != null)
+    {
+        user = JsonConvert.DeserializeObject<Korisnik>(json);
+    }
+
+}
+
+<div class="profil-main-container">
+    <div class="profil-container">
+
+        @if (user != null)
+        {
+            if (user.Tip.Contains("menadzer"))
+            {
+                <dl class="row">
+                    <dt class="col-sm-6">
+                        <a class="btn promeni-link" asp-area="" asp-controller="Menadzer" asp-action="PrikaziNarudzbine">Rad sa narudzbinama</a>
+                    </dt>
+                    <dt class="col-sm-6">
+                        <a class="btn promeni-link" asp-area="" asp-controller="Menadzer" asp-action="DodajMenadzera">Dodaj drugog menadzera</a>
+                    </dt>
+                </dl>
+            }
+        }
+        <dl class="row">
+            <dt class="col-sm-6">
+                @Html.DisplayNameFor(model => model.Korisnik.Ime)
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.Korisnik.Ime)
+            </dd>
+        </dl>
+        <dl class="row">
+            <dt class="col-sm-6">
+                @Html.DisplayNameFor(model => model.Korisnik.Prezime)
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.Korisnik.Prezime)
+            </dd>
+            <dt class="col-sm-6">
+        </dl>
+        <dl class="row">
+            <dt class="col-sm-6">
+                @Html.DisplayNameFor(model => model.Korisnik.Email)
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.Korisnik.Email)
+            </dd>
+        </dl>
+        <dl class="row">
+            <dt class="col-sm-6">
+                @Html.DisplayNameFor(model => model.Korisnik.Username)
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.Korisnik.Username)
+            </dd>
+        </dl>
+        @*<dl class="row">
+            <dt class="col-sm-6">
+                @Html.DisplayNameFor(model => model.Korisnik.Sifra)
+            </dt>
+            <dd class="col-sm-6">
+
+                @Html.DisplayFor(model => model.Korisnik.Sifra)
+            </dd>
+        </dl>*@
+        <dl class="row">
+            <dt class="col-sm-6">
+                @Html.DisplayNameFor(model => model.Korisnik.BrojTelefona)
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.Korisnik.BrojTelefona)
+            </dd>
+        </dl>
+        <dl class="row" hidden="hidden">
+            <dt class="col-sm-6">
+                @Html.DisplayNameFor(model => model.Korisnik.Tip)
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.Korisnik.Tip)
+            </dd>
+        </dl>
+
+        <div>
+            <a asp-action="IzmeniInf" asp-route-id="@Model.Korisnik.Idkorisnika">Izmeni informacije</a>     @*izmena ovde, mozda je potrebno da serializujem korisnika i kao takvog da ga saljem*@
+        </div>
+    </div>
+    @if (user.Tip.Contains("korisnik"))
+    {
+    <div>
+        <a asp-area="" asp-controller="User" asp-action="VratiPrihvacene">Narudzbine koje su prihvacene</a> <br />
+        <a asp-area="" asp-controller="User" asp-action="MojProfil">Narudzbine koje ste kreirali upravo</a> <br />
+        <a asp-area="" asp-controller="User" asp-action="VratiPorucene">Narudzbine koje ste porucili</a>
+    </div>
+    <div class="bg-white col-7 nar-container">
+
+        <h1>Vaše narudžbine</h1>
+
+
+
+        <table class="table-nar">
+            <thead class="thead-nar">
+                <tr class="tr-nar">
+                    <th>Datum Naručivanja</th>
+                    <th>Datum Isporuke</th>
+                    <th>Vreme Isporuke</th>
+                    <th>Adresa Isporuke</th>
+                    <th>Ukupna Cena</th>
+                </tr>
+            </thead>
+            <tbody class="tbody-nar">
+
+                @if (Model.Narudzbine.Count > 0)
+                {
+
+                    foreach (var item in Model.Narudzbine)
+                    {
+                        <tr class="tr-nar">
+                            <td>@item.DatumNarucivanja.ToShortDateString()</td>
+                            <td>@item.DatumIsporuke.ToShortDateString()</td>
+                            <td>@item.VremeIsporuke.ToString()</td>
+                            <td>@item.AdresaIsporuke</td>
+                            <td>@item.UkupnaCena</td>
+                        </tr>
+                    }
+
+
+                }
+            </tbody>
+        </table>
+        @if (Model.Narudzbine.Count == 0)
+        {
+            <p class="text-center font-weight-bolder">Nemate nikakve narudžbine :(</p><br />
+            <a asp-area="" asp-controller="Shop" asp-action="KreirajMeniPoIzboru"><p class="text-center font-weight-bolder">Pogledajte neke od naših ponuda :)</p></a>
+        }
+    </div>
+    }
+</div>

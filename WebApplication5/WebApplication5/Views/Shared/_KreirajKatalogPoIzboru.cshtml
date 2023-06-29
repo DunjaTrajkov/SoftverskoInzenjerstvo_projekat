@@ -1,0 +1,61 @@
+﻿@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<WebApplication5.Models.Proizvod>
+
+
+<div class="card-deck">
+    @foreach (var item in Model)
+    {
+
+        <div class="flex-sm-row">
+            <div class="flex-fill">
+                <div class="card bg-white flex">
+
+                    <input type="hidden" accept=" @Html.DisplayFor(modelItem => item.Idproizvoda)" />
+                    <div class="card-header">
+                        <p class="card-title">@Html.DisplayFor(modelItem => item.Naziv)</p>
+                    </div>
+                    <figure>
+                        <img alt="Slika" class="" src="@item.PutanjaDoSlike" />
+                    </figure>
+                    <div class="card-subtitle">
+                        <p>Opis: @Html.DisplayFor(modelItem => item.Opis)</p>
+                    </div>
+                    <div class="card-columns">
+                        <div class="card-footer">
+
+                            <p>Cena: @Html.DisplayFor(modelItem => item.CenaDekoracije) </p>
+
+
+                        </div>
+                        <div class="card-footer">
+
+                            <p>Boja: @Html.DisplayFor(modelItem => item.Boja)</p>
+
+
+                        </div>
+                        <div class="card-footer">
+                            @*<input type="button" class="btn-success" value="Dodaj u korpu" asp-action="" />*@
+                            <a class="btn-link card-link fa fa-shopping-basket" asp-controller="Shop" asp-area="" asp-action="DodajItem" asp-route-id="@item.Idproizvoda"> Dodaj u korpu</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    }
+
+</div>
+<div class="footer">
+
+    <div class="pagination">
+        @Html.PagedListPager(Model, page => Url.Action("KreirajKatalogPoIzboru", "Shop", new { page = page }), new X.PagedList.Mvc.Common.PagedListRenderOptions
+                      {
+                    DisplayItemSliceAndTotal = false,
+                    ContainerDivClasses = new[] {"navigation" },
+                    LiElementClasses = new[] { "page-item"},
+                    PageClasses = new[] { "page-link"}
+                      }
+                  )
+
+    </div>
+</div>

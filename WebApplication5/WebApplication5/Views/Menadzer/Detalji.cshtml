@@ -1,0 +1,44 @@
+﻿@model WebApplication5.Models.Radnik
+
+@{
+    ViewData["Title"] = "Detalji";
+}
+
+<div class="container-fluid bg-light">
+    <h1>Detalji</h1>
+
+    <div>
+        <h4>Radnik</h4>
+        <hr />
+        <dl class="row">
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Ime)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Ime)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Prezime)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Prezime)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Telefon)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Telefon)
+            </dd>
+            <dt class = "col-sm-2">
+                @Html.DisplayNameFor(model => model.Slobodan)
+            </dt>
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Slobodan)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        @*<a asp-action="IzmeniStatus" asp-route-id="@Model.Idradnika">Izmeni status</a> |*@
+        <a asp-action="ListaRadnike">Vrati se listi</a>
+    </div>
+</div>

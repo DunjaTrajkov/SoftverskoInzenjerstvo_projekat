@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewData["Title"] = "NastalaGreska";
+    Layout = null;
+    
+}
+
+@{ 
+
+    string greska = ViewBag.GRESKA;
+}
+
+<h1>NastalaGreska</h1>
+<!DOCKTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+
+    <div class="bg-danger">
+
+        @if (greska != null)
+        {
+            <p class="text-lg-center">@greska</p>
+        }
+        else
+        {
+            <p>Prc nista nema</p>
+        }
+
+
+    </div>
+</body>
+</html>

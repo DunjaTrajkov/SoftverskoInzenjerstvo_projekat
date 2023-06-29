@@ -1,0 +1,203 @@
+﻿@using X.PagedList.Mvc.Core;
+@using X.PagedList;
+@model X.PagedList.IPagedList<WebApplication5.Models.Proizvod>
+@{
+    ViewData["Title"] = "Proizvodi";
+}
+
+
+<div class="proizvodi-body">
+    <div class="container">
+        <h1><b>Prikaz svih proizvoda kojima raspolažete</b></h1>
+
+        <div class="row">
+            <p>
+                <a class="promeni-link" asp-area="" asp-controller="Menadzer" asp-action="DodajProizvod">Dodaj novi proizvod</a>
+            </p>
+
+            <p>
+                <a class="promeni-link" asp-action="DodajMeni" asp-controller="Menadzer">Dodaj novi meni/katalog</a>
+            </p>
+        </div>
+      
+            @*<input type="submit" class="promeni-btn" data-toggle="modal" data-target="#DodajMeni">Dodaj katalog/meni/>
+   
+
+            <div class="modal" id="#DodajMeni">
+                <div class="modal-dialog">
+
+
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h4 class="modal-title">Dodaj katalog/meni</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+
+                            @Html.ActionLink("DodajMeni", ));
+                        </div>
+                    </div>
+                </div>
+
+            </div>*@
+
+
+       
+
+
+        <table class="table table-striped table-responsive-sm">
+            <thead>
+                <tr>
+                    <th>
+                        ID Proizvoda
+                    </th>
+                    <th>
+                        @*@Html.DisplayNameFor(model => model.Naziv)*@
+                        Naziv
+                    </th>
+                    <th>
+                        @*@Html.DisplayNameFor(model => model.Opis)*@ 
+                        Opis
+                    </th>
+                   
+                    <th>
+                        @*@Html.DisplayNameFor(model => model.VrstaDekoracije)*@
+                        Vrsta dekoracije
+                    </th>
+                    <th>
+                        @*@Html.DisplayNameFor(model => model.Boja)*@
+                        Boja
+                    </th>
+                    <th>
+                        @*@Html.DisplayNameFor(model => model.CenaDekoracije)*@
+                        Cena dekoracije
+                    </th>
+                    <th>
+                        @*@Html.DisplayNameFor(model => model.VrstaObroka)*@
+                        Vrsta obroka
+                    </th>
+                    <th>
+                        @*@Html.DisplayNameFor(model => model.Gramaza)*@
+                        Gramaza
+                    </th>
+                    <th>
+                        @*@Html.DisplayNameFor(model => model.CenaPorcije)*@
+                        Cena porcije
+                    </th>
+                   
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Idproizvoda)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Naziv)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Opis)
+                        </td>
+
+                        @*<td>
+                          @Html.DisplayFor(modelItem => item.Tip)
+                        </td>*@
+
+                        <td>
+                            @if (item.VrstaDekoracije != null)
+                            {
+                                @Html.DisplayFor(modelItem => item.VrstaDekoracije)
+                            }
+                            else
+                            {
+                                @*@Html.DisplayFor(ModelItem => "****")*@
+                            }
+
+                        </td>
+                        <td>
+                            @if (item.Boja != null)
+                            {
+                                @Html.DisplayFor(modelItem => item.Boja)
+                            }
+                            else
+                            {
+                                @*@Html.DisplayFor(ModelItem => "****")*@
+                            }
+                        </td>
+                        <td>
+                            @if (item.CenaDekoracije != null)
+                            {
+                                @Html.DisplayFor(modelItem => item.CenaDekoracije)
+                            }
+                            else
+                            {
+                                @*@Html.DisplayFor(ModelItem => "****")*@
+                            }
+                        </td>
+
+                        <td>
+                            @if (item.VrstaObroka != null)
+                            {
+                                @Html.DisplayFor(modelItem => item.VrstaObroka)
+                            }
+                            else
+                            {
+                                @*@Html.DisplayFor(ModelItem => "****")*@
+                            }
+                        </td>
+                        <td>
+                            @if (item.Gramaza != null)
+                            {
+                                @Html.DisplayFor(modelItem => item.Gramaza)
+                            }
+                            else
+                            {
+                                @*@Html.DisplayFor(ModelItem => "****")*@
+                            }
+                        </td>
+                        <td>
+                            @if (item.CenaPorcije != null)
+                            {
+                                @Html.DisplayFor(modelItem => item.CenaPorcije)
+                            }
+                            else
+                            {
+                                @*@Html.DisplayFor(ModelItem => "****")*@
+                            }
+                        </td>
+
+                        <td>
+
+                            <img alt="Slika" class="img-thumbnail" height="120" src="@item.PutanjaDoSlike" />
+
+                        </td>
+
+                        <td>
+                            <a class="izmeni-link" asp-controller="Menadzer" asp-area="" asp-action="PribaviProizvod" asp-route-id="@item.Idproizvoda">Izmeni</a>
+
+                            <a class="obrisi-link" asp-controller="Menadzer" asp-area="" asp-action="ObrisiProizvod" asp-route-id="@item.Idproizvoda">Obrisi</a>
+
+                            <a class="izmeni-link" asp-controller="Menadzer" asp-area="" asp-action="DodajProizvodeUMeni" asp-route-id="@item.Idproizvoda">Dodaj u katalog/meni</a>
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <div>
+           @Html.PagedListPager(Model, page => Url.Action("Proizvodi", "Menadzer", new { page = page }), new X.PagedList.Mvc.Common.PagedListRenderOptions
+                {
+                  DisplayItemSliceAndTotal = false,
+                  ContainerDivClasses = new[] {"navigation" },
+                  LiElementClasses = new[] { "page-item"},
+                  PageClasses = new[] { "page-link"}
+                }
+            ) 
+        </div> 
+    </div>
+</div>

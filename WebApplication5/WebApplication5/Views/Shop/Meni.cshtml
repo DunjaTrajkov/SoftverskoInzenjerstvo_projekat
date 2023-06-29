@@ -1,0 +1,49 @@
+﻿@using Microsoft.AspNetCore.Http
+@using Newtonsoft.Json;
+
+@{
+    ViewData["Title"] = "Meni";
+    Layout = "_Layout";
+}
+
+@{
+    //podaci
+    var meni1 = Context.Session.GetString("MENI") ?? null;
+    KatalogSaProizvodima meni = null;
+    if (meni1 != null)
+    {
+        meni = JsonConvert.DeserializeObject<KatalogSaProizvodima>(meni1);
+    }
+
+}
+
+<h1>Meni</h1>
+
+<div class="container">
+
+    <div class="title-all">
+        <p>Unesi naziv menija</p>
+        @*@Html.PartialAsync("KreirajMeni");*@
+        <div class="row">
+            <div class="col-md-4">
+                
+                    <div class="form-group">
+                        <label class="control-label"></label>
+                        
+                        <input type="text" class="form-control" asp-for="@meni.Katalog.Naziv"/>
+                       
+                    </div>
+                   
+              
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+        @Html.PartialAsync("_KreirajMeniPoIzboru");
+
+    </div>
+
+
+</div>

@@ -1,0 +1,56 @@
+﻿@model IEnumerable<WebApplication5.Models.Proizvod>
+
+    @foreach (var item in Model)
+    {
+
+        <div class="flex-sm-row">
+            <div class="flex-fill">
+                <div class="card bg-white flex">
+
+                    <input type="hidden" accept=" @Html.DisplayFor(modelItem => item.Idproizvoda)" />
+                    <div class="card-header">
+                        <p class="card-title">@Html.DisplayFor(modelItem => item.Naziv)</p>
+                    </div>
+                    <figure>
+                        <img alt="Slika" class="card-img" height="220" width="180" src="@item.PutanjaDoSlike" />
+                    </figure>
+                    <div class="card-subtitle">
+                        <p>@Html.DisplayFor(modelItem => item.Opis)</p>
+                    </div>
+                    <div class="card-columns">
+                        <div>
+                            @if (item.Tip == 0)
+                            {
+                                <p class="card-footer">@Html.DisplayFor(modelItem => item.CenaPorcije)</p>
+                            }
+                            else
+                            {
+                                <p class="card-footer"> @Html.DisplayFor(modelItem => item.CenaDekoracije) </p>
+                            }
+
+                        </div>
+                        <div>
+                            @if (item.Tip == 0)
+                            {
+                                <p class="card-footer">@Html.DisplayFor(modelItem => item.Gramaza)</p>
+                            }
+                            else
+                            {
+                                <p class="card-footer">Kolicina dekoracije</p>
+                            }
+
+                        </div>
+                        <div class="card-footer">
+                            @*<input type="button" class="btn-success" value="Dodaj u korpu" asp-action="" />*@
+                            <a class="btn-link btn-outline-secondary card-link" asp-controller="Menadzer" asp-area="" asp-action="" asp-route-id="@item.Idproizvoda">Dodaj u korpu</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    }
+
+
+

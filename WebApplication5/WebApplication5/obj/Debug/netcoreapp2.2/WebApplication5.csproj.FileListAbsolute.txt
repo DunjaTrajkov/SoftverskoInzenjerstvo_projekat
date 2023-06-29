@@ -1,0 +1,215 @@
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.deps.json
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.runtimeconfig.json
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.runtimeconfig.dev.json
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.dll
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.pdb
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.Views.dll
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.Views.pdb
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.csprojAssemblyReference.cache
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.csproj.CoreCompileInputs.cache
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.RazorAssemblyInfo.cache
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.RazorAssemblyInfo.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.AssemblyInfoInputs.cache
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.AssemblyInfo.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.TagHelpers.input.cache
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.TagHelpers.output.cache
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.RazorCoreGenerate.cache
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\Dekoracije.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\IstraziPonude.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\Ketering.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\KreirajPoIzboru.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\User\MojProfil.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\User\PrijaviSe.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\User\Registrovanje.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.RazorTargetAssemblyInfo.cache
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.RazorTargetAssemblyInfo.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.Views.pdb
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.dll
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.pdb
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\WebApplicationProba\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.csproj.CopyComplete
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.deps.json
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.runtimeconfig.json
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.runtimeconfig.dev.json
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.dll
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.pdb
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.Views.dll
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.Views.pdb
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.csprojAssemblyReference.cache
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.csproj.CoreCompileInputs.cache
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.RazorAssemblyInfo.cache
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.RazorAssemblyInfo.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.AssemblyInfoInputs.cache
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.AssemblyInfo.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.TagHelpers.input.cache
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.TagHelpers.output.cache
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.RazorCoreGenerate.cache
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\Dekoracije.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\IstraziPonude.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\Ketering.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\KreirajPoIzboru.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\User\MojProfil.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\User\PrijaviSe.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\User\Registrovanje.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.RazorTargetAssemblyInfo.cache
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.RazorTargetAssemblyInfo.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.Views.pdb
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.dll
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.pdb
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.csproj.CopyComplete
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Menadzer\DodajProizvod.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Menadzer\PribaviProizvod.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Menadzer\Proizvodi.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Menadzer\Detalji.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Menadzer\IzmeniStatus.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Menadzer\ListaRadnike.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Menadzer\ZaposliRadnika.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_KreirajKatalogPoIzboru.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_KreirajMeniPoIzboru.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_SviProizvodiPartial.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\PredlazemoMeni.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\Prikaz.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\PrikaziTermine.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\Sve.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\User\IzmeniInf.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\User\IzmeniSifru.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.deps.json
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.runtimeconfig.json
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.runtimeconfig.dev.json
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.dll
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.pdb
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.Views.dll
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.Views.pdb
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.csprojAssemblyReference.cache
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.csproj.CoreCompileInputs.cache
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.RazorAssemblyInfo.cache
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.RazorAssemblyInfo.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.AssemblyInfoInputs.cache
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.AssemblyInfo.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.TagHelpers.input.cache
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.TagHelpers.output.cache
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.RazorCoreGenerate.cache
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Korpa\PrikaziStanjeKorpe.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Menadzer\Detalji.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Menadzer\DodajProizvod.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Menadzer\IzmeniStatus.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Menadzer\ListaRadnike.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Menadzer\PribaviProizvod.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Menadzer\Proizvodi.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Menadzer\ZaposliRadnika.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_KreirajKatalogPoIzboru.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_KreirajMeniPoIzboru.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_SviProizvodiPartial.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\Dekoracije.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\KreirajPoIzboru.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\Meni.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\PredlazemoKatalog.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\PredlazemoMeni.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\Prikaz.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\PrikaziTermine.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\Sve.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\User\IzmeniInf.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\User\IzmeniSifru.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\User\MojProfil.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\User\PrijaviSe.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\User\Registrovanje.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.RazorTargetAssemblyInfo.cache
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.RazorTargetAssemblyInfo.cs
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.Views.pdb
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.dll
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.pdb
+C:\Users\PC2\repos\si.20.34.dionis_c_d\Aplikacija\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.csproj.CopyComplete
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Admin\NastalaGreska.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Korpa\PrikaziStanjeKorpe.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Menadzer\DodajMeni.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Menadzer\PrikaziNarudzbine.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\DodajTermin.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\Meni.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\PredlazemoKatalog.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\User\VratiPorucene.g.cshtml.cs
+E:\Fakultet\6. semestar\Softversko inzenjerstvo\DionisCD\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\User\VratiPrihvacene.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.deps.json
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.runtimeconfig.json
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.runtimeconfig.dev.json
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.dll
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.pdb
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.Views.dll
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\bin\Debug\netcoreapp2.2\WebApplication5.Views.pdb
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.csprojAssemblyReference.cache
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.csproj.CoreCompileInputs.cache
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.RazorAssemblyInfo.cache
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.RazorAssemblyInfo.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.AssemblyInfoInputs.cache
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.AssemblyInfo.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.TagHelpers.input.cache
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.TagHelpers.output.cache
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.RazorCoreGenerate.cache
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Admin\NastalaGreska.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Korpa\PrikaziStanjeKorpe.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Menadzer\Detalji.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Menadzer\DodajMeni.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Menadzer\DodajProizvod.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Menadzer\IzmeniStatus.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Menadzer\ListaRadnike.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Menadzer\PribaviProizvod.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Menadzer\PrikaziNarudzbine.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Menadzer\Proizvodi.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Menadzer\ZaposliRadnika.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_KreirajKatalogPoIzboru.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_KreirajMeniPoIzboru.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_SviProizvodiPartial.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\Dekoracije.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\DodajTermin.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\IstraziPonude.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\Ketering.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\KreirajPoIzboru.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\Meni.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\PredlazemoKatalog.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\PredlazemoMeni.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\Prikaz.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\PrikaziTermine.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\Shop\Sve.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\User\IzmeniInf.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\User\IzmeniSifru.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\User\MojProfil.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\User\PrijaviSe.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\User\Registrovanje.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\User\VratiPorucene.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\User\VratiPrihvacene.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.RazorTargetAssemblyInfo.cache
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.RazorTargetAssemblyInfo.cs
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.Views.pdb
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.dll
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.pdb
+C:\Users\PC2\Desktop\WebApplication5\WebApplication5\obj\Debug\netcoreapp2.2\WebApplication5.csproj.CopyComplete

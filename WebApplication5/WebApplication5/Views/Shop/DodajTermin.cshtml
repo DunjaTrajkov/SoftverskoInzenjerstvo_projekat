@@ -1,0 +1,51 @@
+﻿@model WebApplication5.Models.Narudzbina
+
+
+<form class="card bg-transparent">
+
+
+    <div class="form-group" id="datetimepicker2">
+        <label asp-for="DatumIsporuke" class="control-label"></label>
+        <input type="date" asp-for="DatumIsporuke" class="form-control" />
+        <span asp-validation-for="DatumIsporuke" class="text-danger"></span>
+    </div>
+    <div class="form-group" id="datetimepicker3">
+        <label asp-for="VremeIsporuke" class="control-label"></label>
+        <input type="time" asp-for="VremeIsporuke" class="form-control" />
+        <span asp-validation-for="VremeIsporuke" class="text-danger"></span>
+    </div>
+    <div class="form-group datetimepicker2">
+        <label asp-for="AdresaIsporuke" class="control-label"></label>
+        <input asp-for="AdresaIsporuke" class="form-control" />
+        <span asp-validation-for="AdresaIsporuke" class="text-danger"></span>
+    </div>
+
+
+
+    <div class="form-group">
+        <input type="submit" value="Dodaj termin" class="btn termini-btn-dodaj" asp-area="" asp-controller="Shop" asp-action="DodajTermine" />
+    </div>
+
+
+</form>
+
+
+@section Scripts {
+    @*@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}*@
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker2').datetimepicker({
+                format: 'dd.mm.yyyy hh:ii',
+                autoclose: true
+            });
+        });
+
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker3').datetimepicker({
+                format: 'LT'
+            });
+        });
+    </script>
+}

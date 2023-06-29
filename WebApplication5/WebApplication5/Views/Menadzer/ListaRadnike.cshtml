@@ -1,0 +1,87 @@
+﻿@using X.PagedList.Mvc.Core;
+@using X.PagedList;
+@model X.PagedList.IPagedList<WebApplication5.Models.Radnik>
+
+@{
+    ViewData["Title"] = "Spisak zaposljenih radnika";
+}
+
+
+<div class="container-fluid bg-light">
+
+
+
+    <p class="title-all">
+        <a class="btn-block" asp-action="ZaposliRadnika">Zaposli radnika</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @*@Html.DisplayNameFor(model => model.Ime)*@
+                    Ime
+                </th>
+                <th>
+                    @*@Html.DisplayNameFor(model => model.Prezime)*@
+                    Prezime
+                </th>
+                <th>
+                    @*@Html.DisplayNameFor(model => model.Telefon)*@
+                    Broj mobilnog telefona
+                </th>
+                <th>
+                    @*@Html.DisplayNameFor(model => model.Slobodan)*@
+                    Status radnika  @*mislim da li je preuzeo narudzbinu ili ne*@
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Ime)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Prezime)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Telefon)
+                    </td>
+                    @if (item.Slobodan)
+                    {
+                        <td>
+                            @*@Html.DisplayFor(modelItem => item.Slobodan)*@
+                            Slobodan
+                        </td>
+                    }
+                    else
+                    {
+                        <td>
+                            @*@Html.DisplayFor(modelItem => item.Slobodan)*@
+                            Zauzet
+                        </td>
+                    }
+                    <td>
+                        @*<a asp-area="" asp-controller="Menadzer" asp-action="IzmeniStatus" asp-route-id="@item.Idradnika">Izmeni status</a> |*@
+                        <a asp-area="" asp-controller="Menadzer" asp-action="Detalji" asp-route-id="@item.Idradnika">Prikazi detalje</a> |
+                        <a asp-area="" asp-controller="Menadzer" asp-action="Otpusti" asp-route-id="@item.Idradnika">Otpusti</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="footer">
+        <div class="pagination">
+            @Html.PagedListPager(Model, page => Url.Action("ListaRadnike", "Menadzer", new { page = page }), new X.PagedList.Mvc.Common.PagedListRenderOptions
+                            {
+                          DisplayItemSliceAndTotal = false,
+                          ContainerDivClasses = new[] {"navigation" },
+                          LiElementClasses = new[] { "page-item"},
+                          PageClasses = new[] { "page-link"}
+                            }
+                        )
+        </div>
+    </div>
+</div>

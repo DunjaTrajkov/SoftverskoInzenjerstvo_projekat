@@ -1,0 +1,47 @@
+﻿@*@model IEnumerable<WebApplication5.Models.>*@
+
+@{
+    ViewData["Title"] = "Predlazemo katalog";
+}
+
+
+
+<div class="meni-main-bg">
+    <h1 class="mnogo-jak-naslov">Predlažemo Katalog</h1>
+    @*<p class="jak-naslov">
+        <a asp-action="Create">Kreiraj katalog</a> Ovo samo vidi menadzer i admin
+    </p>*@
+    <div class="w-75">
+        <div class="card-deck">
+
+            @foreach (KatalogSaProizvodima meni in Model)
+            {
+
+                <div class="list-group-item katalog-bg">
+
+
+                    <input type="hidden" accept="@meni.Katalog.Idkatalog" />
+                    <div class="card-title">
+
+                        @meni.Katalog.Naziv
+                    </div>
+                    <div class="">
+                        @foreach (Proizvod pr in meni.Proizvod)
+                        {
+                            <input type="hidden" accept="@pr.Idproizvoda" />
+                            <div>
+                                <p>@pr.Naziv</p>
+                            </div>
+                        }
+                    </div>
+                    <div class="">
+                        @*<input type="button" class="btn-success" value="Dodaj u korpu" asp-action="" />*@
+                        <a class="div-align fa fa-shopping-basket" asp-controller="Shop" asp-area="" asp-action="DodajItem" asp-route-id="@meni.Katalog.Idkatalog"> Dodaj u korpu</a>
+                    </div>
+                </div>
+
+            }
+        </div>
+    </div>
+</div>
+

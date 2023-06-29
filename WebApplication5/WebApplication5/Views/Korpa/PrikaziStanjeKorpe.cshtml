@@ -1,0 +1,73 @@
+﻿@using Microsoft.AspNetCore.Http;
+@model WebApplication5.Models.Korpa
+
+
+@{
+    ViewData["Title"] = "Korpa";
+}
+
+
+
+<div class="korpa-main-bg">
+    <div class="korpa-lista">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Naziv kataloga/menija</th>
+                    <th>Količina</th>
+                    <th>Cena</th>
+                    <th>Detalji</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null)
+                {
+                    @foreach (KatalogCena katalog in Model.KataloziCene)
+                    {
+                        <tr>
+                            <td> @katalog.Katalog.Naziv</td>
+                            <td><input type="number" min="1" placeholder="1" asp-action="PromenaKolicine" asp-controller="Korpa" /></td>
+                            <td> @katalog.CenaKatalog</td>
+                            <td><button class="btn-prikazi" onclick='prikaziDetalje(@katalog.Katalog.Idkatalog)'>Prikazi</button></td>
+                        </tr>
+                        @foreach (Proizvod p in katalog.Proizvodi)
+                        {
+                            <tr hidden="hidden" class="k_@katalog.Katalog.Idkatalog">
+                                <td colspan="4">@p.Naziv</td>
+                            </tr>
+                        }
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="4">
+                            <p class="alert-danger mojText1">
+                                Korpa je prazna. Nemate dodati meni/katalog u korpu.
+                            </p>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+
+        <div class="bg-light">
+            <p>Ukupna cena : @Model.NarCena.CenaNar</p>
+            <a class="btn promeni-btn" asp-area="" asp-controller="Korpa" asp-action="Poruci">Poruči</a>
+        </div>
+
+    </div>
+</div>
+<script>
+    function prikaziDetalje(value) {
+        var redovi = document.querySelectorAll(".k_" + value);
+        for (i = 0; i < redovi.length; i++) {
+            if (redovi[i].getAttribute("hidden") != null)
+                redovi[i].removeAttribute("hidden");
+            else
+                redovi[i].setAttribute("hidden", "hidden");
+                
+        }
+    }
+</script>

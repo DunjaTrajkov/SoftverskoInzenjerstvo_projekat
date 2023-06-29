@@ -1,0 +1,272 @@
+﻿@using Microsoft.AspNetCore.Http
+@using Newtonsoft.Json;
+@model WebApplication5.Models.PocetniPodaci
+
+@{
+    ViewData["Title"] = "Pocetna ";
+}
+
+@{
+    var json = Context.Session.GetString("User");
+    Korisnik user = null;
+    if (json != null)
+    {
+        user = JsonConvert.DeserializeObject<Korisnik>(json);
+    }
+   string messagee =  ViewBag.Porukica;
+
+    //string username = (Context.Session.GetString("Username") != null) ? Context.Session.GetString("Username"):"";
+}
+<link rel="stylesheet" href="~/css/MojTextPocetne.css" />
+@if(messagee != null)
+{ 
+<confirmation-dialog hidden="">
+    <div class="popover">
+        <div class="container" role="dialog" aria-labelledby="title" aria-describedby="message">
+            <button class="alert-dismissible" title="Otkazi">
+                <img class="alert-dismissible" src="~/images/payment-icon/1.png" />
+            </button>
+            <div class="content">
+                <img class="alert-warning" />
+                <h4>@messagee</h4>
+
+            </div>
+            <div class="align-bottom">
+                <button class="btn-info" >U redu</button>
+            </div>
+        </div>
+    </div>
+</confirmation-dialog>
+}
+
+<div class="">
+
+    <div id="slides-shop" class="cover-slides">
+        <ul class="slides-container">
+            <li class="text-center">
+                <img src="~/images/banner_01.jpg" alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="m-b-20"><strong id="welcome-text">Dobro došli u  <br> Dionis </strong></h1>
+                            <p><a class="btn hvr-hover" asp-area="" asp-controller="Shop" asp-action="PredlazemoMeni">Istraži ponude</a></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="text-center">
+                <img src="~/images/banner_04.jpg" alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="m-b-20"><strong id="welcome-text">Dobro došli u  <br> Dionis </strong></h1>
+                            <p><a class="btn hvr-hover" asp-area="" asp-controller="Shop" asp-action="PredlazemoKatalog">Istraži ponude</a></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="text-center">
+                <img src="~/images/banner_02.jpg" alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="m-b-20"><strong id="welcome-text">Dobro došli u  <br> Dionis </strong></h1>
+                            <p><a class="btn hvr-hover" asp-area="" asp-controller="Shop" asp-action="PrikaziTermine">Istraži ponude</a></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="slides-navigation">
+            <a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            <a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <!-- End Slider -->
+    <!-- Start Categories  -->
+    <div id="divTeksta" class="categories-shop">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box">
+                        <img class="img-fluid" src="~/images/preporuka_01.jpg" alt="" />
+                        <a class="btn hvr-hover" asp-area="" asp-controller="Shop" asp-action="PredlazemoMeni">Predlažemo Meni</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box">
+                        <img class="img-fluid" src="~/images/preporuka_02.jpg" alt="" />
+                        <a class="btn hvr-hover" asp-area="" asp-controller="Shop" asp-action="PredlazemoKatalog">Preporučujemo Katalog</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box">
+                        <img class="img-fluid" src="~/images/preporuka_03.jpg" alt="" />
+                        <a class="btn hvr-hover" asp-area="" asp-controller="Shop" asp-action="PrikaziTermine">Zakažite termin</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Categories -->
+    <!-- Start About Us-->
+    <div class="ceoTekst">
+        <div class="divTeksta" id="onama">
+            <h2>O nama</h2>
+            @if (user != null)
+            {
+                if (user.Tip.Contains("admin") || user.Tip.Contains("menadzer"))
+                {
+
+                    <form asp-controller="Home" asp-action="Izmeni" method="post">
+                        <textarea class="form-control mojText1" asp-for="ONama"></textarea>
+                        <button class="btn btn-outline-primary" type="submit">Sacuvaj izmene</button>
+                    </form>
+
+                }
+                else
+                    if (user.Tip.Contains("korisnik"))
+                {
+                    <p class="mojText1" id="O nama">
+                        <!--dodao sam id svim paragrafima kako bih mogao da pristupim preko js-a-->
+
+
+                        @Html.DisplayFor(model => model.ONama)
+
+
+                    </p>
+                }
+            }
+
+            else
+            {
+                <p class="mojText1"  id="O nama">
+
+                    @Html.DisplayFor(model => model.ONama)
+                </p>
+            }
+        </div>
+        <div class="divTeksta" id="korisničkausluga">
+            <h2>Korisnička usluga</h2>
+            @if (user != null)
+            {
+                if (user.Tip.Contains("admin") || user.Tip.Contains("menadzer"))
+                {
+
+                    <form asp-controller="Home" asp-action="Izmeni" method="post">
+                        <textarea class="form-control mojText1" asp-for="KorisnickaUsluga"></textarea>
+                        <button class="btn btn-outline-primary" type="submit">Sacuvaj izmene</button>
+                    </form>
+                }
+                else
+                      if ( user.Tip.Contains("korisnik"))
+                {
+                    <p class="mojText1" id="Korisnicka usluga">
+
+                        @Html.DisplayFor(model => model.KorisnickaUsluga)
+
+                    </p>
+                }
+            }
+
+            else
+            {
+                <p class="mojText1"  id="Korisnicka usluga">
+
+                    @Html.DisplayFor(model => model.KorisnickaUsluga)
+                </p>
+            }
+        </div>
+        <div class="divTeksta" id="uslovikorišćenja">
+            <h2>Uslovi korišćenja</h2>
+            @if (user != null)
+            {
+                if (user.Tip.Contains("admin") || user.Tip.Contains("menadzer"))
+                {
+                    <form asp-controller="Home" asp-action="Izmeni" method="post">
+                        <textarea class="form-control mojText1" asp-for="UsloviKoriscenja"></textarea>
+                        <button class="btn btn-outline-primary" type="submit">Sacuvaj izmene</button>
+                    </form>
+
+                }
+                else
+                    if (user.Tip.Contains("korisnik"))
+                {
+                    <p class="mojText1" id="Uslovi koriscenja">
+
+                        @Html.DisplayFor(model => model.UsloviKoriscenja)
+                    </p>
+                }
+            }
+
+            else
+            {
+                <p class="mojText1"  id="Uslovi koriscenja">
+
+                    @Html.DisplayFor(model => model.UsloviKoriscenja)
+                </p>
+            }
+        </div>
+        <div class="divTeksta" id="politikaprivatnosti">
+            <h2>Politika privatnosti</h2>
+            @if (user != null)
+            {
+                if (user.Tip.Contains("admin") || user.Tip.Contains("menadzer"))
+                {
+
+                    <form asp-controller="Home" asp-action="Izmeni" method="post">
+                        <textarea class="form-control mojText1" asp-for="PolitikaPrivatnost"></textarea>
+                        <button class="btn btn-outline-primary" type="submit">Sacuvaj izmene</button>
+                    </form>
+                }
+                else
+                    if (user.Tip.Contains("korisnik"))
+                {
+                    <p class="mojText1" id="Politika privatnosti">
+
+                        @Html.DisplayFor(model => model.PolitikaPrivatnost)
+                    </p>
+                }
+            }
+
+            else
+            {
+                <p class="mojText1" id="Politika privatnosti">
+
+                    @Html.DisplayFor(model => model.PolitikaPrivatnost)
+                </p>
+            }
+        </div>
+        <div class="divTeksta" id="informacijeodostavi">
+            <h2>Informacije o dostavi</h2>
+            @if (user != null)
+            {
+                if (user.Tip.Contains("admin") || user.Tip.Contains("menadzer"))
+                {
+
+                    <form asp-controller="Home" asp-action="Izmeni" method="post">
+                        <textarea class="form-control mojText1" asp-for="UsloviKoriscenja"></textarea>
+                        <button class="btn btn-outline-primary" type="submit">Sacuvaj izmene</button>
+                    </form>
+
+                }
+                else
+                    if ( user.Tip.Contains("korisnik"))
+                    {
+                        <p class="mojText1" id="Informacije o dostavi">
+
+                            @Html.DisplayFor(model => model.InformacijeODostavi)
+                        </p>
+                    }
+            }
+            else
+            {
+                <p class="mojText1" id="Informacije o dostavi">
+
+                    @Html.DisplayFor(model => model.InformacijeODostavi)
+                </p>
+            }
+        </div>
+    </div>
+</div>
+

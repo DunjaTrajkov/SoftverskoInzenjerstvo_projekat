@@ -1,0 +1,147 @@
+﻿body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-image: url(../images/BgImgForm/bg-prijava1.jpg);
+    display: flex;
+}
+
+.form-control {
+    height: 41px;
+    background: #f2f2f2;
+    box-shadow: none !important;
+    border: none;
+}
+
+    .form-control:focus {
+        background: #bea497;
+    }
+
+.form-control, .btn {
+    border-radius: 3px;
+}
+
+.prijava-form {
+    width: 390px;
+    margin: 30px auto;
+}
+
+    .prijava-form form {
+        color: #fff;
+        border-radius: 3px;
+        margin-bottom: 15px;
+        background: rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+    }
+
+    .prijava-form h2 {
+        color: #333;
+        font-weight: bold;
+        margin-top: 0;
+    }
+
+    .prijava-form hr {
+        margin: 0 -30px 20px;
+    }
+
+    .prijava-form .form-group {
+        margin-bottom: 20px;
+    }
+
+    .prijava-form input[type="checkbox"] {
+        margin-top: 3px;
+    }
+
+    .prijava-form .row div:first-child {
+        padding-right: 10px;
+    }
+
+    .prijava-form .row div:last-child {
+        padding-left: 10px;
+    }
+
+    .prijava-form .btn {
+        font-size: 16px;
+        font-weight: bold;
+        background: #B37B2D;
+        border: none;
+        min-width: 140px;
+    }
+
+        .prijava-form .btn:hover, .prijava-form .btn:focus {
+            background: #fff !important;
+            outline: none;
+        }
+
+    .prijava-form a {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+        .prijava-form a:hover {
+            text-decoration: none;
+            color: #B37B2D;
+        }
+
+    .prijava-form form a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+        .prijava-form form a:hover {
+            text-decoration: none;
+        }
+
+    .prijava-form .hint-text {
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+.hint-text {
+    color: #B37B2D;
+    font-size: medium;
+}
+#text {
+    color: #B37B2D;
+    font-size: medium;
+}
+    #text:hover {
+        color: #E1BC74;
+    }
+
+#h2moj {
+    color: #B37B2D;
+    text-align: center;
+}
+
+#pmoj {
+    color: forestgreen;
+    font-size: large;
+}
+
+#mojaLabela {
+    color: #E1BC74;
+}
+
+#intext {
+    color: black;
+    font-size: medium;
+}
+
+#crvenaZaValid {
+    color: red;
+}
+#slik2{
+    margin-top:0;
+    height:160px;
+    width:160px;
+    border-image-slice:fill;
+    margin-left:80px;
+   
+}
+.btn[type="submit"]:hover {
+    color: #B37B2D;
+}

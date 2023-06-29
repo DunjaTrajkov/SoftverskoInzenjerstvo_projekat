@@ -1,0 +1,39 @@
+﻿@model WebApplication5.Models.Radnik
+
+@{
+    ViewData["Title"] = "Izmeni status";
+}
+
+<div class="container-fluid bg-light">
+
+
+    <h1>Izmeni status radnika</h1>
+
+    <h4>Radnik</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="IzmeniStatus">
+
+                <input type="hidden" asp-for="Idradnika" />
+
+
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="Slobodan" /> @Html.DisplayNameFor(model => model.Slobodan)
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input asp-action="IzmeniStatus" type="submit" value="Izmeni" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="ListaRadnike" asp-controller="Menadzer">Back to List</a>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

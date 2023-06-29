@@ -1,0 +1,17 @@
+﻿@model IEnumerable<WebApplication5.Models.Narudzbina>
+
+
+@foreach (var item in Model)
+{
+    <tr class="tr-nar">
+        <td>@item.DatumNarucivanja.ToShortDateString()</td>
+        <td>@item.DatumIsporuke.ToShortDateString()</td>
+        <td>@item.VremeIsporuke.ToString()</td>
+        <td>@item.AdresaIsporuke</td>
+        <td>@item.UkupnaCena</td>
+        <td>
+
+            <button type="button" asp-area="" asp-action="DetaljiNarudzbine" asp-controller="Shop" class="btn bg-info" asp-route-id="@item.Idnarudzbine">Detalji</button>
+        </td>
+    </tr>
+}

@@ -1,0 +1,25 @@
+﻿@model WebApplication5.Models.Katalog
+
+@{
+    ViewData["Title"] = "Ketering";
+    Layout = "_Layout";
+}
+
+<h1>Ketering</h1>
+
+<div class="container-fluid">
+    <h4>Katalog</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Naziv)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Naziv)
+        </dd>
+    </dl>
+</div>
+<div>
+    @*<a asp-action="Edit" asp-route-id="@Model.Idkatalog">Edit</a> |*@
+    @*<a asp-action="Index">Back to List</a>*@
+</div>

@@ -1,0 +1,320 @@
+﻿@using Microsoft.AspNetCore.Http
+@using Newtonsoft.Json;
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Dionis</title>
+
+
+    <!--TEmaaa-->
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="~/images/grape-icon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="~/images/grape-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="~/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="~/css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="~/css/custom.css">
+    <!-- text-home-page CSS -->
+    <link rel="stylesheet" href="~/css/tekst-home.css" />
+
+   
+
+</head>
+<body>
+
+
+    @{
+        var json = Context.Session.GetString("User") != null ? Context.Session.GetString("User") : null;
+        Korisnik user = null;
+      
+        if (json != null)
+        {
+            user = JsonConvert.DeserializeObject<Korisnik>(json);
+        }
+    
+    }
+
+    <!-- Start Main Top -->
+    <div class="main-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="our-link">
+                        <ul>
+                            <li><a asp-area="" asp-controller="User" asp-action="MojProfil"><i class="fa fa-user s_color"></i> Moj nalog</a></li>
+
+                            <li><a href="#ftr"><i class="fas fa-headset"></i> Kontakt</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                   
+                    @if (user != null)
+                    {
+                        <div class="our-link float-md-right">
+                            <ul>
+                                <li class="fa fa-user  s_color">  Prijavljeni ste kao <strong> @user.Username </strong> </li>
+                                <li><a asp-area="" asp-controller="User" asp-action="OdjaviSe"><i class="fa fa-lock s_color"></i> Odjavi se</a></li>
+                            </ul>
+                        </div>
+                    }
+                    
+                    else
+                    {
+                        
+                        <div class="dropdown float-right">
+                            <button class="btn btn-outline-success" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pristup nalogu
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" asp-controller="User" asp-action="Registrovanje">Registrujte se</a>
+
+                                <div class="dropdown-divider"></div>
+
+                                <a class="dropdown-item" asp-controller="User" asp-action="PrijaviSe">Prijavi se</a>
+
+
+                            </div>
+                        </div>
+
+                    }
+                </div>
+            </div>
+        </div>
+        <!-- End Main Top -->
+        <!-- Start Main Top -->
+        <header class="main-header">
+            <!-- Start Navigation -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+                <div class="container">
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/Dionis_logo.png" class="logo" alt=""></a>
+                    </div>
+                    <!-- End Header Navigation -->
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                            <li class="nav-item active"><a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Pocetna</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#ftr">O nama</a></li>
+
+                            @if (user != null)
+                            {
+                                if (user.Tip.Contains("menadzer") || user.Tip.Contains("admin"))
+                                {
+                                    <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Menadzer" asp-action="Proizvodi">Proizvodi</a></li>
+                                    <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Menadzer" asp-action="ListaRadnike">Radnici</a></li>
+                                }
+                                else
+                                {
+
+                                    <li class="dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Ketering</a>
+                                        <ul class="dropdown-menu">
+                                            <!--Ovde kontroleri treba da se dodaju i da ref ove stranice-->
+                                            <li><a asp-area="" asp-controller="Shop" asp-action="PredlazemoMeni">Predlažemo Meni</a></li>
+
+                                            <li><a asp-area="" asp-controller="Shop" asp-action="KreirajMeniPoIzboru">Kreiraj po izboru</a></li>
+
+                                        </ul>
+                                    </li>
+
+
+                                    <li class="dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dekoracija</a>
+                                        <ul class="dropdown-menu">
+                                            <!--Ovde kontroleri treba da se dodaju i da ref ove stranice-->
+                                            <li><a asp-area="" asp-controller="Shop" asp-action="PredlazemoKatalog">Predlažemo Katalog </a></li>
+                                            <li><a asp-area="" asp-controller="Shop" asp-action="KreirajKatalogPoIzboru">Kreiraj po izboru</a></li>
+
+                                        </ul>
+                                    </li>
+
+                                }
+
+                            }
+                            else //dok ne nadjem bolje resenje
+                            {
+                                <li class="dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Ketering</a>
+                                    <ul class="dropdown-menu">
+                                        <!--Ovde kontroleri treba da se dodaju i da ref ove stranice-->
+                                        <li><a asp-area="" asp-controller="Shop" asp-action="PredlazemoMeni">Predlažemo Meni</a></li>
+                                        <li><a asp-area="" asp-controller="Shop" asp-action="KreirajMeniPoIzboru">Kreiraj po izboru</a></li>
+
+                                    </ul>
+                                </li>
+
+
+                                <li class="dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dekoracija</a>
+                                    <ul class="dropdown-menu">
+                                        <!--Ovde kontroleri treba da se dodaju i da ref ove stranice-->
+                                        <li><a asp-area="" asp-controller="Shop" asp-action="PredlazemoKatalog">Predlažemo Katalog </a></li>
+                                        <li><a asp-area="" asp-controller="Shop" asp-action="KreirajKatalogPoIzboru">Kreiraj po izboru</a></li>
+
+                                    </ul>
+                                </li>
+                            }
+
+                            <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Shop" asp-action="PrikaziTermine">Termini</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                    <!-- Start Atribute Navigation -->
+                    <div class="attr-nav">
+                                <a asp-area="" asp-controller="Korpa" asp-action="PrikaziStanjeKorpe">
+                                    <p class="fa fa-shopping-basket">Moja korpa</p>
+                                </a>
+                    </div>
+                    <!-- End Atribute Navigation -->
+                </div>
+               
+            </nav>
+            <!-- End Navigation -->
+        </header>
+        <!-- End Main Top -->
+        <!-- Start Top Search -->
+
+        <!-- Start Slider -->
+
+
+       
+
+        <div class="nasaPozadina" >
+            @RenderBody();
+
+        </div>
+        <!-- Start Footer  -->
+        <footer id="ftr" >
+            <div class="footer-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="footer-top-box">
+                                <h3>Radno vreme</h3>
+                                <ul class="list-time">
+                                    <li>Ponedeljak - Četvrtak: 12.00 - 18.00</li>
+                                    <li>Petak: 12.00 - 20.00</li>
+                                    <li>Vikend: 14.00 - 20.00</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="footer-top-box">
+                                <h3>Društvene mreže</h3>
+                                <p>Zapratite nas</p>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-viber" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="footer-widget">
+                                <h4>O Dionisu</h4>
+                                <p id="ttext">Mi znamo koliko je dragoceno Vaše vreme. <br />  Zato budite gost na sopstvenoj proslavi, prepustite nama kompletnu organizaciju događaja. </p>
+
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="footer-link">
+                                <h4>Informacije</h4>
+                                <ul>
+                                    <li><a href="#onama"> O nama</a></li>
+                                    <li><a href="#korisničkausluga"> Korisnčka usluga</a></li>
+                                    <li><a href="#uslovikorišćenja"> Uslovi korišćenja</a></li>
+                                    <li><a href="#politikaprivatnosti"> Politika privatnosti</a></li>
+                                    <li><a href="#informacijeodostavi"> Informacije o dostavi</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="footer-link-contact">
+                                <h4>Kontaktirajte nas</h4>
+                                <ul>
+                                    <li>
+                                        <p><i class="fas fa-map-marker-alt"></i> Adresa: Aleksandra Medvedeva ,<br> BR 14  </p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fas fa-phone-square"></i>Telefon: 0612345678</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fas fa-envelope"></i>Email: dionisinfo@gmail.com</a></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer  -->
+        <!-- Start copyright  -->
+        <div class="footer-copyright">
+            <p class="footer-company">
+                Sva prava zadrzana. &copy; 2020 <a href="#">Dionis</a>
+
+            </p>
+        </div>
+        <!-- End copyright  -->
+
+        <a href="#" id="back-to-top" title="Povratak na pocetak" style="display: none;">&uarr;</a>
+      
+        <!-- ALL js FILES -->
+       
+        <script src="~/js/jquery-3.2.1.min.js"></script>
+        <script src="~/js/popper.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <!-- ALL PLUGINS -->
+        <script src="~/js/jquery.superslides.min.js"></script>
+        <script src="~/js/bootstrap-select.js"></script>
+        <script src="~/js/inewsticker.js"></script>
+        <script src="~/js/bootsnav.js"></script>
+        <script src="~/js/images-loded.min.js"></script>
+        <script src="~/js/isotope.min.js"></script>
+        <script src="~/js/owl.carousel.min.js"></script>
+        <script src="~/js/baguetteBox.min.js"></script>
+        <script src="~/js/form-validator.min.js"></script>
+        <script src="~/js/contact-form-script.js"></script>
+        <script src="~/js/custom.js"></script>
+        
+
+       
+
+
+        <!--Kraj temeee-->
+
+       
+        
+
+    </div>
+
+
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

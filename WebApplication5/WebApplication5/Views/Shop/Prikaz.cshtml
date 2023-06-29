@@ -1,0 +1,52 @@
+﻿@*@model IEnumerable<WebApplication5.Models.Proizvod>*@
+
+@*@using PagedList;
+
+@model IPagedList<WebApplication5.Models.Proizvod>*@
+
+@using X.PagedList;
+@model X.PagedList.IPagedList<WebApplication5.Models.Proizvod>
+
+@{
+    ViewData["Title"] = "Prikaz";
+    Layout = "_Layout";
+
+}
+@{
+    var pom = ViewBag.ID;
+
+}
+
+
+
+<div class="container-fluid bg-light">
+
+    <!--Moze neko motivaciona poruka da sami prave menije tj da dodavaju vise u korpu asp-action="KreirajMeniPoIzboru" hahaha -->
+    <!--Ako koristimo ovaj izbor moramo i js da aktiviramo i da radi sa asp.net core,  asp-action="KreirajKatalogPoIzboru" vi odlucite :D
+        -->
+   
+
+        @switch (pom)
+        {
+            case 0:
+                {
+                    @Html.Partial("_KreirajMeniPoIzboru", Model);
+                    break;
+                }
+            case 1:
+                {
+                    @Html.Partial("_KreirajKatalogPoIzboru", Model);
+                    break;
+                }
+            default:
+                {
+                    @Html.Partial("_SviProizvodiPartial", Model);
+                    break;
+                }
+        }
+
+   
+    @**@
+
+   
+</div>
